@@ -16,7 +16,7 @@ def scrape_population(url):
 
         return result
     else:
-        print(f"Error: Unable to fetch data. Status code: {response.status_code}")
+        print("Error: Unable to fetch data. Status code: {response.status_code}")
         return None
 
 url_to_scrape = 'https://www.scrapethissite.com/pages/simple/'
@@ -24,5 +24,5 @@ scraped_data = scrape_population(url_to_scrape)
 
 if scraped_data:
     for country, population in scraped_data.items():
-        print(f"Country: {country}, Population: {population}")
+        print("Country: {country}, Population: {population}")
            
