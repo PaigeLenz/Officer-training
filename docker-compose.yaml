@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  nextcloud:
+    image:  nextcloud:apache
+    ports:
+      - 8000:8000
+
+  minecraft:
+    image: itzg/minecraft-server
+    ports:
+    - 25565:25565
+   
+volumes:
+  nextcloud:
+  db-data:
